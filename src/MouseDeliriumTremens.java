@@ -4,7 +4,7 @@ import java.awt.Robot;
 import java.util.Calendar;
 
 public class MouseDeliriumTremens {
-	public static final int SLEEP_MILLIS = 60 * 1000;
+	public static final int SLEEP_MILLIS = 180 * 1000;
 
 	// This app gets the mouse pointer's current location and moves the mouse to
 	// where it already is.
@@ -12,13 +12,17 @@ public class MouseDeliriumTremens {
 	// computer from going idle.
 	public static void main(String... args) throws Exception {
 		Robot robot = new Robot();
+		Point pointOld= null;
 		while (true) {
-			if (checkTimeInterval()) {
+			if (checkTimeInterval()) {				
 				Point point = MouseInfo.getPointerInfo().getLocation();
-				robot.mouseMove(point.x, point.y);
-				System.out.println("Mouse Moved!!");
+				if (pointOld==null || !point.equals(pointOld)) {
+					robot.mouseMove(point.x, point.y);
+					pointOld= point;
+					//System.out.println("Mouse Moved!!");
+				}
 			} else {
-				System.out.println("Not in time interval");
+				//System.out.println("Not in time interval");
 			}
 			Thread.sleep(SLEEP_MILLIS);
 		}
