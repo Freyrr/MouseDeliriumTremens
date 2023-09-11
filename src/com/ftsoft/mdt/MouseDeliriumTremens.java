@@ -1,3 +1,5 @@
+package com.ftsoft.mdt;
+
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Robot;
@@ -19,10 +21,10 @@ public class MouseDeliriumTremens {
 				if (pointOld==null || !point.equals(pointOld)) {
 					robot.mouseMove(point.x, point.y);
 					pointOld= point;
-					//System.out.println("Mouse Moved!!");
+					System.out.println("Mouse Moved!!");
 				}
 			} else {
-				//System.out.println("Not in time interval");
+				System.out.println("Not in time interval");
 			}
 			Thread.sleep(SLEEP_MILLIS);
 		}
@@ -32,6 +34,6 @@ public class MouseDeliriumTremens {
 		Calendar cal = Calendar.getInstance();
 		int hour = cal.get(Calendar.HOUR_OF_DAY);
 		int minutes = cal.get(Calendar.MINUTE);
-		return hour == 8 && minutes >= 00 || hour == 18 && minutes <= 00;
+		return hour >= 8 && hour <= 18;
 	}
 }

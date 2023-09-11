@@ -3,6 +3,9 @@
   <groupId>MouseDeliriumTremens</groupId>
   <artifactId>MouseDeliriumTremens</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+  	<start-class>com.ftsoft.mdt.MouseDeliriumTremens</start-class>
+  </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -10,9 +13,19 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <release>17</release>
+          <addClasspath>true</addClasspath>
+          <mainClass>com.ftsoft.mdt.MouseDeliriumTremens</mainClass>
+          <layout>JAR</layout>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ejb-plugin</artifactId>
+        <configuration>
+          <ejbVersion>3.0</ejbVersion>
         </configuration>
       </plugin>
     </plugins>
   </build>
+  <packaging>ejb</packaging>
 </project>
