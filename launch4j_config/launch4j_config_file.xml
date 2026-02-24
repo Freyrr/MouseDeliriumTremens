@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\scr\MouseDeliriumTremens\target\MouseDeliriumTremens-0.0.1-SNAPSHOT.jar</jar>
+  <outfile>C:\scr\MouseDeliriumTremens\launch4j_config\MouseDeliriumTremens.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\scr\MouseDeliriumTremens\icon\MouseDeliriumTremens.ico</icon>
+  <singleInstance>
+    <mutexName>MouseDeliriumTremens</mutexName>
+    <windowTitle></windowTitle>
+  </singleInstance>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion>1.8</minVersion>
+    <maxVersion></maxVersion>
+    <opt>-Dmouse.sleep.millis=120000</opt>
+    <opt>-Dmouse.start.hour=8</opt>
+    <opt>-Dmouse.end.hour=18</opt>
+  </jre>
+  <versionInfo>
+    <fileVersion>0.0.1.0</fileVersion>
+    <txtFileVersion>0.0.1.0</txtFileVersion>
+    <fileDescription>MouseDeliriumTremens - Prevents system sleep</fileDescription>
+    <copyright>Copyright © 2025</copyright>
+    <productVersion>0.0.1.0</productVersion>
+    <txtProductVersion>0.0.1.0</txtProductVersion>
+    <productName>MouseDeliriumTremens</productName>
+    <companyName></companyName>
+    <internalName>MouseDeliriumTremens</internalName>
+    <originalFilename>MouseDeliriumTremens.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>

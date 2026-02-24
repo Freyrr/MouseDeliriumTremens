@@ -4,19 +4,21 @@
 MouseDeliriumTremens is a lightweight utility that prevents your computer from entering sleep mode or activating the screensaver by simulating imperceptible mouse movement at regular intervals. This tool is particularly useful in environments where you have limited administrative privileges or restricted control over system settings.
 
 ## Features
-- Simulates minimal mouse movement without visible displacement
+- Simulates minimal mouse movement with imperceptible oscillation
 - Prevents system sleep mode and screensaver activation
 - Runs silently in the background
 - Low resource consumption
 - No administrative privileges required
-- Configurable movement interval
+- Active only during working hours (8:00-18:00)
+- 3-minute interval between movements
 
 ## How It Works
 The application works by:
 1. Getting the current mouse cursor position
-2. Making an imperceptible "movement" to the same position
-3. Repeating this process at regular intervals
-4. The movement is so minimal that it's unnoticeable to the user, yet sufficient to keep the system active
+2. Moving the mouse by 1 pixel vertically in alternating directions (+1/-1)
+3. Repeating this process every 3 minutes (180 seconds)
+4. Only operates during working hours (8:00-18:00)
+5. The oscillating movement prevents reaching screen edges and is barely noticeable to the user
 
 ## Use Cases
 - Working on computers with restricted administrative access
@@ -26,8 +28,8 @@ The application works by:
 - Preventing screen locks during presentations
 
 ## Requirements
-- Windows operating system
-- .NET Framework (version specified in project)
+- Java Runtime Environment (JRE 8 or higher)
+- Works on Windows, macOS, and Linux
 - No administrative privileges needed
 
 ## Disclaimer
