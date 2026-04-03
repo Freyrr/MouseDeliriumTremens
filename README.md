@@ -142,14 +142,6 @@ ps aux | grep MouseDeliriumTremens
 kill <PID>
 ```
 
-## Documentation
-
-- `CONFIGURATION.md` - Detailed configuration options
-- `CONFIGURATION_LAUNCH4J.md` - Step-by-step Launch4j guide
-- `DEPLOYMENT_GUIDE.md` - Windows deployment and distribution
-- `TASK_SCHEDULER_SETUP.md` - Task Scheduler configuration
-- `TROUBLESHOOTING.md` - Common issues and solutions
-
 ## Disclaimer
 This tool is intended for legitimate use cases where users need to maintain system activity. Please ensure you comply with your organization's policies regarding the use of such utilities.
 
