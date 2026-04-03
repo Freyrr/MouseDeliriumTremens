@@ -25,8 +25,8 @@
     <minVersion>1.8</minVersion>
     <maxVersion></maxVersion>
     <opt>-Dmouse.sleep.millis=120000</opt>
-    <opt>-Dmouse.start.hour=8</opt>
-    <opt>-Dmouse.end.hour=18</opt>
+    <opt>-Dmouse.start.hour=0</opt>
+    <opt>-Dmouse.end.hour=23</opt>
   </jre>
   <versionInfo>
     <fileVersion>0.0.1.0</fileVersion>
